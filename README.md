@@ -1,6 +1,6 @@
-# kgdb-android
+# Android KGDB Patch for Nexus 5X
 
-Kernel patch to get KGDB working on the Nexus 5x.
+Kernel patch to get KGDB working on the Nexus 5X.
 
 For background, please see associated blog post at http://www.contextis.com/resources/blog/kgdb-android-debugging-kernel-boss
 
@@ -19,7 +19,7 @@ You should hit the KGDB breakpoint and be able to continue, examine memory, etc.
 
 More verbose explanation of the patch:
 
-    Add poll commands to Nexus 5x serial driver to make KGDB work.
+    Add poll commands to Nexus 5X serial driver to make KGDB work.
     
     Also fix compiling issue when deactivating CONFIG_MSM_WATCHDOG_V2. Which
     is necessary because the watchdog would trigger a reboot while KGDB
