@@ -13,7 +13,7 @@ For background, please see associated blog post at http://www.contextis.com/reso
 - Flash boot.img to the device.
 - Open a shell (adb shell), su to root, then type: `echo -n g > /proc/sysrq-trigger` to make the kernel break
 - On your host machine fire up GDB (you'll need a working version of GDB cross-compiled for ARM, ndk_r10e has a prebuilt binary included): `<path_to_ndk_r10e>/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android-gdb <path_to_kernel_repo>/vmlinux`
-- inside gdb connect to device: `(gdb) target remote /dev/ttyUSB0`
+- Inside GDB connect to device: `(gdb) target remote /dev/ttyUSB0`
 
 You should hit the KGDB breakpoint and be able to continue, examine memory, etc.
 
