@@ -5,7 +5,7 @@ Kernel patch to get KGDB working on the Nexus 5X.
 For background, please see associated blog post at http://www.contextis.com/resources/blog/kgdb-android-debugging-kernel-boss
 
 - `git clone https://android.googlesource.com/kernel/msm`
-- `git checkout android-msm-bullhead-3.10-nougat`
+- `git checkout android-msm-bullhead-3.10-nougat` (should be commit b75eb01ab048d2b3b42c18585c5bbd7219c0536a which was the commit this patch was created on)
 - Apply this patch.
 - `export ARCH=arm64 && export CROSS_COMPILE=<path_to_ndk_r17c>/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android-`
 - `make bullhead_kgdb_defconfig && make`
