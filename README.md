@@ -1,5 +1,7 @@
 # Android KGDB Patch for Nexus 5X
 
+To be able to use brakpoints you also need to set CONFIG_FORCE_PAGES=Y (which isn't done by the patch and i'm to lazy to update it atm).
+
 Kernel patch to get KGDB working on the Nexus 5X.
 
 For background, please see associated blog post at http://www.contextis.com/resources/blog/kgdb-android-debugging-kernel-boss
