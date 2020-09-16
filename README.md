@@ -1,6 +1,6 @@
 # Android KGDB Patch for Nexus 5X
 
-To be able to use brakpoints you also need to set CONFIG_FORCE_PAGES=Y (which isn't done by the patch and i'm to lazy to update it atm).
+To be able to use brakpoints you also need to set CONFIG_FORCE_PAGES=Y (which isn't done by the patch).
 
 Kernel patch to get KGDB working on the Nexus 5X.
 
@@ -35,4 +35,4 @@ CONFIG_MSM_WATCHDOG_V2.
 You can also enable CONFIG_KGDB_KDB to debug directly from the serial
 console. ~If it is enable you can still also connect using an external
 GDB but you need to close the serial console first in this case.~
-For some odd reason sometime connecting with an external debugger only works when the serial console is open sometimes only when it's closed and sometimes it doesn't matter. I thought it was kdb causing this but it seems the i was wrong.
+For some odd reason sometime connecting with an external debugger only works when the serial console is open sometimes only when it's closed and sometimes it doesn't matter. I thought it was kdb causing this but it seems that I was wrong.
